@@ -1,0 +1,33 @@
+RewriteBase /
+#Secure Htaccess File
+<Files .htaccess>
+ order allow,deny
+ deny from all
+</Files>
+
+#Disable Directory Browsing
+Options All -Indexes
+
+#Disabel Access To Logs/Template Files
+<Files ~ "\.(log|tpl)$">
+ order allow,deny
+ deny from all
+</files>
+
+#Error Page - Not Found
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+ErrorDocument 404 /index.php
+ErrorDocument 403 /index.php
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^aftalt.dk$ [NC]
+RewriteRule ^(.*)$ http://www.aftalt.dk/$1 [R=301,L]
+RewriteRule ^index.php$ http://www.aftalt.dk/ [R=301,L]
+
+RewriteRule tasks/(.*)/ tdetails.php?id=$1
+RewriteRule tasks/(.*) tdetails.php?id=$1
+RewriteRule freelancers/(.*)/ fdetails.php?id=$1
+RewriteRule freelancers/(.*) fdetails.php?id=$1
+RewriteRule messages/(.*)/ mdetails.php?id=$1
+RewriteRule messages/(.*) mdetails.php?id=$1
