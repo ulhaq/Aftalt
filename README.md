@@ -1,12 +1,12 @@
 # Aftalt #
 
-**Dette website er et mødepunkt for freelancere og arbejdsgivere.**
+**This website is a meeting point for freelancers and employers.**
 
-*I selve websitet er det muligt at oprette en profil, og derefter oprette opgaver for freelancere. Oprettelse af profilen gør det også muligt at se kontaktoplysninger tilhørende arbejdsgivere.*
+*In the website it is possible to create a profile and then create tasks for freelancers. By creating a profile it will also be possible to view contact details of employers.*
 
-Således er der følgende funktioner:
-- Oprettelse af profil og log ind system.
-- Søgning af opgaver og freeleancere. (Instant søgning)
-- Intern besked system mellem brugerne – PM-System
+Thus, there are the following features:
+- Creating a profile and login system.
+- Search of tasks and free lean advertise. (Instant Search)
+- Internal messaging system between users - PM System
 - Admin Panel
-- Og mange andre funktioner
+- And many other features
